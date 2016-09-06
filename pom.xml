@@ -21,7 +21,7 @@
 				<version>1.2.0-SNAPSHOT</version>
 				<configuration>
 					<verbose>true</verbose>
-					<tsOut>target/ts</tsOut>
+					<tsOut>app</tsOut>
 					<candiesJsOut>webapp</candiesJsOut>
 					<targetVersion>ES3</targetVersion>
 					<module>commonjs</module>
