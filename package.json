@@ -39,7 +39,9 @@
     "zone.js": "^0.6.17",
 
     "angular2-in-memory-web-api": "0.0.18",
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    
+    "primeng": "^1.0.0-beta.14"    
   },
   "devDependencies": {
     "concurrently": "^2.2.0",
