@@ -13,4 +13,7 @@ public @interface NgModule {
 	Class<?>[] declarations() default {};
 
 	Class<?>[] bootstrap() default {};
+
+	Class<?>[] providers() default {};
+
 }

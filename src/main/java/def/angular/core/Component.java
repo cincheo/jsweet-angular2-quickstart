@@ -11,4 +11,13 @@ public @interface Component {
 	String selector();
 
 	String template();
+
+	String templateUrl() default "";
+
+	String moduleId() default "";
+
+	String[] styleUrls() default {};
+	
+	Class<?>[] directives() default {};
+
 }
