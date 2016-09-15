@@ -117,5 +117,10 @@
 			<artifactId>jquery</artifactId>
 			<version>1.10.0-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>org.jsweet.candies</groupId>
+			<artifactId>es6-promise</artifactId>
+			<version>0.0.0-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>

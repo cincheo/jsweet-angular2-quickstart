@@ -10,7 +10,7 @@ import jsweet.lang.Decorator;
 public @interface Component {
 	String selector();
 
-	String template();
+	String template() default "";
 
 	String templateUrl() default "";
 
