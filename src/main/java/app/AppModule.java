@@ -1,6 +1,5 @@
-package app.module;
+package app;
 
-import app.component.AppComponent;
 import def.angular.core.NgModule;
 import def.angular.platform_browser.BrowserModule;
 

@@ -17,3 +17,7 @@ _temp
 !typings/typings.d.ts
 !wallaby.js
 /target/
+/.jsweet/
+/.settings/
+/webapp/
+/.tsc-rootfile.ts

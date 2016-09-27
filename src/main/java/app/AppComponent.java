@@ -1,4 +1,4 @@
-package app.component;
+package app;
 
 import def.angular.core.Component;
 
