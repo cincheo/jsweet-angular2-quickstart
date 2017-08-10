@@ -1,6 +1,6 @@
 # Angular 2 QuickStart Source in Java (JSweet-powered)
 
-This repository is an adaptation of the [Angular 2 quickstart with TypeScript](https://github.com/angular/quickstart). The only difference is that the source code is written in Java, and compiled to TypeScript using [JSweet](https://github.com/cincheo/jsweet). So, this project is potentially a good starting point to start building an Angular 2 application with Java.
+This repository is an adaptation of the [Angular 2 quickstart with TypeScript](https://github.com/angular/quickstart). The core difference is that the source code is written in Java and transpiled using [JSweet](https://github.com/cincheo/jsweet). So, this project is potentially a good starting point to start building an Angular 2 application with Java. It should also be possible to adapt this project for Angular 4 (would require an Angular 4 candy) - contributions are more than welcome ;)
 
 For details on how to use this project, please refer to the [original project](https://github.com/angular/quickstart), which provides extensive documentation, and to the [angular.io quickstart](https://angular.io/docs/ts/latest/quickstart.html).
 
@@ -10,7 +10,7 @@ Node.js > v4.x.x and npm > v3.x.x.
     
 **Verify that you are running at least node `v4.x.x` and npm `3.x.x`**
 by running `node -v` and `npm -v` in a terminal/console window.
-Older versions produce errors.
+Older versions may produce errors.
 
 Maven (for compiling with JSweet).
 
@@ -44,12 +44,6 @@ This will open the application in your browser. If you compile again the Java so
 
 ### How to extend the application
 
-You can add new files in the ``app`` package (``src/main/java``). Please be aware that in JSweet, each package is a module. So, all the classes defined in a given package will belong to the same TypeScript/JavaScript module.
+You can add new files in the ``app`` package (``src/main/java``). For example sake, your may want to check the [JSweet PrimeNG Quickstart](https://github.com/cincheo/jsweet-primeng-quickstart), which provides a more complete Angular2 example based on the same project's structure. 
 
-A minimal Angular 2 API is defined in the ``def.angular`` package (the ``def`` package in JSweet is by convention similar to a ``d.ts`` file in TypeScript: it holds external declarations). When extending the application, you will need to provide the API elements that you are using and that would be missing in the current definitions.
-
-If you want to use external JavaSript libraries, check out JSweet candies rather than writing definitions manually. Here definitions have to be written manually for Angular 2 because the corresponding candy does not exist yet.
-
-### Other topics
-
-Please refer to the [original project](https://github.com/angular/quickstart).
+The project uses the [angular2 candy](https://github.com/jsweet-candies/candy-angular2), see the Maven dependencies in ``pom.xml``. This candy may require some improvements. In that case, you may want to clone that repository and contribute to it. You may also want to get rid of the dependency, copy the ``def.angular`` source code in your project's source code and perform in-place modifications.

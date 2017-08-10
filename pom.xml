@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jsweet</groupId>
 	<artifactId>jsweet-angular2-quickstart</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>2.0.0-SNAPSHOT</version>
 	<repositories>
 		<repository>
 			<id>jsweet-central</id>
@@ -42,26 +42,27 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.jsweet</groupId>
-				<artifactId>jsweet-maven-plugin</artifactId>
-				<version>2.0.0-rc1</version>
-				<configuration>
-					<verbose>true</verbose>
-					<tsOut>.</tsOut>
-					<candiesJsOut>webapp</candiesJsOut>
-					<targetVersion>ES3</targetVersion>
-					<module>commonjs</module>
-					<tsOnly>true</tsOnly>
-				</configuration>
-				<executions>
-					<execution>
-						<id>generate-js</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>jsweet</goal>
-						</goals>
-					</execution>
-				</executions>
+                <groupId>org.jsweet</groupId>
+                <artifactId>jsweet-maven-plugin</artifactId>
+                <version>2.0.0-SNAPSHOT</version>
+                <configuration>
+                    <verbose>true</verbose>
+                    <tsOut>.</tsOut>
+                    <outDir>.</outDir>
+                    <candiesJsOut>webapp</candiesJsOut>
+                    <targetVersion>ES5</targetVersion>
+                    <module>commonjs</module>
+                    <sourceMap>true</sourceMap>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>generate-js</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>jsweet</goal>
+                        </goals>
+                    </execution>
+                </executions>
 			</plugin>
 		</plugins>
 		<pluginManagement>
